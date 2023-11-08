@@ -15,11 +15,62 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = study_practice
 build_property.ProjectDir = /home/KHPK.RU/student/RiderProjects/study_practice/
 
+[/home/KHPK.RU/student/RiderProjects/study_practice/AddAttendance_Window.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [/home/KHPK.RU/student/RiderProjects/study_practice/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/home/KHPK.RU/student/RiderProjects/study_practice/LoginWindow.axaml]
+[/home/KHPK.RU/student/RiderProjects/study_practice/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/home/KHPK.RU/student/RiderProjects/study_practice/MainWindow.axaml]
+[/home/KHPK.RU/student/RiderProjects/study_practice/Views/AttendanceStatsWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/KHPK.RU/student/RiderProjects/study_practice/Views/AttendanceWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/KHPK.RU/student/RiderProjects/study_practice/Views/BuyCourse_Window.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/KHPK.RU/student/RiderProjects/study_practice/Views/CourseStatsWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/KHPK.RU/student/RiderProjects/study_practice/Views/DeleteAttendance_Window.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/KHPK.RU/student/RiderProjects/study_practice/Views/EditAttendance_Window.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/KHPK.RU/student/RiderProjects/study_practice/Views/InfoCoursesWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/KHPK.RU/student/RiderProjects/study_practice/Views/LoginWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/KHPK.RU/student/RiderProjects/study_practice/Views/PaymentCourse.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/KHPK.RU/student/RiderProjects/study_practice/Views/PaymentStatsWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/KHPK.RU/student/RiderProjects/study_practice/Views/PaymentWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/KHPK.RU/student/RiderProjects/study_practice/Views/ScheduleWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/KHPK.RU/student/RiderProjects/study_practice/Views/Schedule_ClientWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/KHPK.RU/student/RiderProjects/study_practice/Views/SelectionWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/KHPK.RU/student/RiderProjects/study_practice/Views/StatsSelectWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/KHPK.RU/student/RiderProjects/study_practice/Views/Success_BuyWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/KHPK.RU/student/RiderProjects/study_practice/Views/TeacherWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

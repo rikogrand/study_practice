@@ -1,0 +1,32 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="study_practice.TeacherWindow"
+        Title="Преподаватели">
+        <Grid  RowDefinitions="*,*,*">
+                <DataGrid  x:Name="TeacherDataGrid"
+                           AutoGenerateColumns="False"
+                           IsReadOnly="True"
+                           GridLinesVisibility="All"
+                           BorderThickness="1"
+                           BorderBrush="Gray"
+                           Height="300"
+                           Width="320"
+                           VerticalAlignment="Top"
+                           x:CompileBindings="False">
+                    
+                        <DataGrid.Columns>
+                                <DataGridTextColumn Header="Id" Binding="{Binding Teacher_ID}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="Фамилия" Binding="{Binding Teacher_Surname}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="Имя" Binding="{Binding Teacher_Name}"></DataGridTextColumn>
+                        </DataGrid.Columns>
+                </DataGrid>
+                <Grid Grid.Row="0"  Width="200" HorizontalAlignment="Left" RowDefinitions="*, * ,*, *" >
+                        <Button x:Name="Schedule_Window" Click="Schedule_Window_OnClick"  Grid.Row="2" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Bottom" Content="Вернуться к расписанию"  />
+                </Grid>
+                <Button x:Name="Exit" Grid.Row="2" HorizontalAlignment="Right" FontSize="20"  Content="Выйти" />
+        </Grid>
+</Window>
+

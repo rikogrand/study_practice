@@ -1,0 +1,32 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="study_practice.PaymentWindow"
+        Title="Оплаты">
+     <Grid   RowDefinitions="*,*,*">
+        <DataGrid  x:Name="PaymentDataGrid"
+                   AutoGenerateColumns="False"
+                   IsReadOnly="True"
+                   GridLinesVisibility="All"
+                   BorderThickness="1"
+                   BorderBrush="Gray"
+                   Height="300"
+                   Width="320"
+                   VerticalAlignment="Top"
+                   x:CompileBindings="False">
+                    
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding Payment_ID}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Способ оплаты" Binding="{Binding Payment_Method}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+         <Grid  Grid.Row="0"  Width="200" HorizontalAlignment="Left" RowDefinitions="*, * ,*, *" >
+             <Button x:Name="Schledule_Window" Grid.Row="1" FontSize="16" Content="Вернуться к расписанию занятий" Click="Schledule_Window_OnClick" />
+         </Grid>
+         <Button x:Name="Exit" Grid.Row="2" HorizontalAlignment="Right" FontSize="20"  Content="Выйти"  Click="Exit_OnClick"/>
+     </Grid>
+
+</Window>
+

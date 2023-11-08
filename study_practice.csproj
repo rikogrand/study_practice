@@ -18,4 +18,76 @@
         <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.0.2"/>
         <PackageReference Include="MySql.Data" Version="8.1.0" />
     </ItemGroup>
+
+
+    <ItemGroup>
+      <Compile Update="Views\AttendanceWindow.axaml.cs">
+        <DependentUpon>AttendanceWindow.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Views\BuyCourse_Window.axaml.cs">
+        <DependentUpon>BuyCourse_Window.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Views\LoginWindow.axaml.cs">
+        <DependentUpon>LoginWindow.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Views\PaymentWindow.axaml.cs">
+        <DependentUpon>PaymentWindow.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Views\Schedule_ClientWindow.axaml.cs">
+        <DependentUpon>Schedule_ClientWindow.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Views\ScheduleWindow.axaml.cs">
+        <DependentUpon>ScheduleWindow.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Views\SelectionWindow.axaml.cs">
+        <DependentUpon>SelectionWindow.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Views\StatsSelectWindow.axaml.cs">
+        <DependentUpon>StatsSelectWindow.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Views\TeacherWindow.axaml.cs">
+        <DependentUpon>TeacherWindow.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Views\InfoCoursesWindow.axaml.cs">
+        <DependentUpon>InfoCoursesWindow.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Views\PaymentCourse.axaml.cs">
+        <DependentUpon>PaymentCourse.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Views\Success_BuyWindow.axaml.cs">
+        <DependentUpon>Success_BuyWindow.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Views\PaymentStatsWindow.axaml.cs">
+        <DependentUpon>PaymentStatsWindow.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Views\CourseStatsWindow.axaml.cs">
+        <DependentUpon>CourseStatsWindow.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Views\AttendanceStatsWindow.axaml.cs">
+        <DependentUpon>AttendanceStatsWindow.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Views\DeleteAttendance_Window.axaml.cs">
+        <DependentUpon>DeleteAttendance_Window.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Views\EditAttendance_Window.axaml.cs">
+        <DependentUpon>EditAttendance_Window.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+    </ItemGroup>
 </Project>

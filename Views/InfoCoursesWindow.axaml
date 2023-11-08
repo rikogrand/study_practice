@@ -1,0 +1,13 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="study_practice.InfoCoursesWindow"
+        Title="Информация"
+    MinHeight="200"
+    MinWidth="300"
+    SizeToContent="WidthAndHeight"
+    CanResize="False">
+    <Label> Для того, чтобы купить курс, необходимо выбрать нужный вам курс, после чего нажать на кнопку "Купить"</Label>
+</Window>

@@ -4,26 +4,38 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="study_practice.MainWindow"
-    Title="Заявки">
-    
-                <DataGrid  x:Name="CourseDataGrid"
-                          AutoGenerateColumns="False"
-                          IsReadOnly="True"
-                          GridLinesVisibility="All"
-                          BorderThickness="1"
-                          BorderBrush="Gray"
-                          Margin="7,20"
-                          Height="550"
-                          Width="1600"
-                          x:CompileBindings="False">
+    Title="Курсы"
+    Height="300"
+    Width="700"
+    WindowStartupLocation="CenterScreen">
+    <Grid  RowDefinitions="*,*,*">
+        <DataGrid  x:Name="CourseDataGrid"
+                   AutoGenerateColumns="False"
+                   IsReadOnly="True"
+                   GridLinesVisibility="All"
+                   BorderThickness="1"
+                   BorderBrush="Gray"
+                   Height="300"
+                   Width="320"
+                   VerticalAlignment="Top"
+                   x:CompileBindings="False"
+                   >
                     
-                    <DataGrid.Columns>
-                        <DataGridTextColumn Header="Id" Binding="{Binding Course_ID}"></DataGridTextColumn>
-                        <DataGridTextColumn Header="Название курса" Binding="{Binding Course_Name}"></DataGridTextColumn>
-                        <DataGridTextColumn Header="Общее количество мест" Binding="{Binding Number_Of_Seats}"></DataGridTextColumn>
-                        <DataGridTextColumn Header="Количество занятых мест" Binding="{Binding Number_Of_Busy}"></DataGridTextColumn>
-                        <DataGridTextColumn Header="Стоимость курса" Binding="{Binding Price}"></DataGridTextColumn>
-                        <DataGridTextColumn Header="Преподаватель" Binding="{Binding Teacher}"></DataGridTextColumn>
-                    </DataGrid.Columns>
-                </DataGrid>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding Course_ID}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Название" Binding="{Binding Course_Name}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Количество мест" Binding="{Binding Number_Of_Seats}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Количество занятых мест" Binding="{Binding Number_Of_Busy}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Стоимость" Binding="{Binding Price}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Преподаватель" Binding="{Binding Teacher}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Grid Grid.Row="0"  Width="200" HorizontalAlignment="Left" RowDefinitions="*, * ,*, *" >
+            <Button x:Name="InfoCourses_Window" Grid.Row="1" FontSize="16" Content="FAQ" Click="InfoCourses_Window_OnClick"  />
+            <Button x:Name="BuyCourse_Window" Grid.Row="2" FontSize="20" Click="BuyCourse_Window_OnClick" HorizontalAlignment="Left" VerticalAlignment="Bottom" Content="Купить курс"  />
+        </Grid>
+        <Button x:Name="Schledule_Window" Click="Schledule_Window_OnClick"  HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="20" Grid.Row="2" Content="Посмотреть расписание курсов"/>
+        <Button x:Name="Exit" Grid.Row="2" HorizontalAlignment="Right" FontSize="20"  Content="Выйти"  Click="Exit_OnClick"/>
+    </Grid>
 </Window>
+

@@ -3,8 +3,45 @@
   <component name="AvaloniaProject">
     <option name="projectPerEditor">
       <map>
+        <entry key="AddAttendance_Window.axaml" value="study_practice.csproj" />
+        <entry key="AddSchledule_Window.axaml" value="study_practice.csproj" />
         <entry key="App.axaml" value="study_practice.csproj" />
+        <entry key="AttendanceStatsWindow.axaml" value="study_practice.csproj" />
+        <entry key="AttendanceWindow.axaml" value="study_practice.csproj" />
+        <entry key="BuyCourse_Window.axaml" value="study_practice.csproj" />
+        <entry key="CourseStatsWindow.axaml" value="study_practice.csproj" />
+        <entry key="DeleteAttendance_Window.axaml" value="study_practice.csproj" />
+        <entry key="DeleteSchledule_Window.axaml" value="study_practice.csproj" />
+        <entry key="EditAttendance_Window.axaml" value="study_practice.csproj" />
+        <entry key="EditSchledule_Window.axaml" value="study_practice.csproj" />
+        <entry key="InfoCoursesWindow.axaml" value="study_practice.csproj" />
+        <entry key="LoginWindow.axaml" value="study_practice.csproj" />
         <entry key="MainWindow.axaml" value="study_practice.csproj" />
+        <entry key="PaymentCourse.axaml" value="study_practice.csproj" />
+        <entry key="PaymentStatsWindow.axaml" value="study_practice.csproj" />
+        <entry key="PaymentWindow.axaml" value="study_practice.csproj" />
+        <entry key="ScheduleWindow.axaml" value="study_practice.csproj" />
+        <entry key="Schedule_ClientWindow.axaml" value="study_practice.csproj" />
+        <entry key="SelectPaymentMethod.axaml" value="study_practice.csproj" />
+        <entry key="SelectionWindow.axaml" value="study_practice.csproj" />
+        <entry key="Stats_ChooseWindow.axaml" value="study_practice.csproj" />
+        <entry key="Success_BuyWindow.axaml" value="study_practice.csproj" />
+        <entry key="TeacherWindow.axaml" value="study_practice.csproj" />
+        <entry key="Views/AttendanceStatsWindow.axaml" value="study_practice.csproj" />
+        <entry key="Views/AttendanceWindow.axaml" value="study_practice.csproj" />
+        <entry key="Views/BuyCourse_Window.axaml" value="study_practice.csproj" />
+        <entry key="Views/CourseStatsWindow.axaml" value="study_practice.csproj" />
+        <entry key="Views/InfoCoursesWindow.axaml" value="study_practice.csproj" />
+        <entry key="Views/LoginWindow.axaml" value="study_practice.csproj" />
+        <entry key="Views/PaymentCourse.axaml" value="study_practice.csproj" />
+        <entry key="Views/PaymentStatsWindow.axaml" value="study_practice.csproj" />
+        <entry key="Views/PaymentWindow.axaml" value="study_practice.csproj" />
+        <entry key="Views/ScheduleWindow.axaml" value="study_practice.csproj" />
+        <entry key="Views/Schedule_ClientWindow.axaml" value="study_practice.csproj" />
+        <entry key="Views/SelectionWindow.axaml" value="study_practice.csproj" />
+        <entry key="Views/StatsSelectWindow.axaml" value="study_practice.csproj" />
+        <entry key="Views/Success_BuyWindow.axaml" value="study_practice.csproj" />
+        <entry key="Views/TeacherWindow.axaml" value="study_practice.csproj" />
       </map>
     </option>
   </component>

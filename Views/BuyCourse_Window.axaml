@@ -1,0 +1,34 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="study_practice.BuyCourse_Window"
+        Title="Купить курс"
+        WindowStartupLocation="CenterScreen">
+   <Grid ColumnDefinitions="*, *,*" RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, *, * ,* ,* ,*, *">
+
+       <TextBlock Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center">Введите ваше имя</TextBlock>
+       <TextBox Grid.Row="1"   Grid.Column="1" Name="ClientName" Height="10" HorizontalAlignment="Left" Width="330"/>
+       <TextBlock Grid.Row="2"  Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center">Введите вашу фамилию</TextBlock>
+       <TextBox Grid.Row="2"  Grid.Column="1" Name="ClientSurname" Height="10" HorizontalAlignment="Left" Width="330"/>
+       <TextBlock Grid.Row="3" Grid.Column="1"  VerticalAlignment="Center" HorizontalAlignment="Center">Введите ваше отчество</TextBlock>
+       <TextBox Grid.Row="3" Grid.Column="1" Name="ClientPatronymic" Height="10" HorizontalAlignment="Left" Width="330"/>
+       <TextBlock Grid.Row="5" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center">Введите номер телефона</TextBlock>
+       <TextBox Grid.Row="5" Grid.Column="1" Name="ClientPhoneNumber" Height="10" HorizontalAlignment="Left" Width="330"/>
+              
+       <TextBlock Grid.Row="6" Grid.Column="0"  VerticalAlignment="Center" HorizontalAlignment="Center">Выберите дату рождения</TextBlock>
+       <DatePicker Grid.Row="6" Grid.Column="1" Name="ClientBirthday" HorizontalAlignment="Left"/>
+       <TextBlock Grid.Row="7" Grid.Column="1" Width="330" VerticalAlignment="Center" HorizontalAlignment="Left">Напишите языки, которые вы изучали до этого</TextBlock>
+       <TextBox Grid.Row="7" Grid.Column="1"  Name="ClientStudiedLanguages" Height="10"  HorizontalAlignment="Left" Width="340"/>
+       
+       <TextBlock Grid.Row="8" Grid.Column="1"  VerticalAlignment="Center" HorizontalAlignment="Center">Напишите уровень знаний языков</TextBlock>
+       <TextBox Grid.Row="8" Grid.Column="1" Name="ClientLanguagesLevel" Height="10" HorizontalAlignment="Left" Width="350"/>
+       <TextBlock Grid.Row="9" Grid.Column="1"  VerticalAlignment="Center"  Width="350" HorizontalAlignment="Left">Напишите языки, которые вы бы хотели изучать</TextBlock>
+       <TextBox Grid.Row="9" Grid.Column="1" Name="ClientWhatLanguageStudy" Height="10" HorizontalAlignment="Left" Width="340"/>
+       <StackPanel HorizontalAlignment="Center" Grid.Row="11" Grid.ColumnSpan="2" Spacing="10" Orientation="Horizontal">
+           <Button Name="BackBtn" Content="Вернуться" Click="BackBtn_OnClick"  />
+           <Button  Name="BuyCourseBtn" Content="Купить курс" Click="BuyCourseBtn_OnClick"   />
+       </StackPanel>
+   </Grid>
+</Window>

@@ -1,8 +1,6 @@
 namespace study_practice;
 
-public class Payments
+public class CoursePayment
 {
-    public int Payment_ID { get; set; }
     public string Payment_Method { get; set; }
-    
 }

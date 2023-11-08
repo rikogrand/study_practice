@@ -1,0 +1,25 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:studyPractice="clr-namespace:study_practice"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="study_practice.PaymentCourse"
+      Title="Оплата"
+        WindowStartupLocation="CenterScreen">
+   <Grid ColumnDefinitions="Auto,*,*" RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, *, * ,* ,* ,*, *">
+
+       <TextBlock Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center">Выберите способ оплаты</TextBlock>
+       <ComboBox Grid.Row="1" Grid.Column="" Name="MethodComboBox" Height="10" x:CompileBindings="False" HorizontalAlignment="Left" VerticalAlignment="Center" Width="290">
+           <ComboBox.ItemTemplate>
+               <DataTemplate>
+                   <TextBlock x:DataType="studyPractice:Payments_Method"  Text="{Binding Method_Name}"></TextBlock>
+               </DataTemplate>
+           </ComboBox.ItemTemplate>
+       </ComboBox>
+       <StackPanel HorizontalAlignment="Center" Grid.Row="11" Grid.ColumnSpan="2" Spacing="10" Orientation="Horizontal">
+           <Button Grid.Row="10" Name="BackBtn" Content="Вернуться" Click="BackBtn_OnClick"  />
+           <Button Grid.Row="10" Grid.Column="1" Name="ConfirmPaymentBtn" Content="Подтвердить оплату" Click="ConfirmPaymentBtn_OnClick"  />
+       </StackPanel>
+   </Grid>
+</Window>

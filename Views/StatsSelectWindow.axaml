@@ -1,0 +1,20 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="study_practice.StatsSelectWindow"
+        Title="Отчеты"
+        Height="700"
+        Width="600"
+        WindowStartupLocation="CenterScreen">
+   <Grid RowDefinitions="*,*,*,*,*, *" ColumnDefinitions="*,*,*,*,*">
+       <TextBlock  Grid.Column="2" FontSize="23" Width="550" >Выберите тот отчет, который нужно вывести</TextBlock>
+       <Button Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" Width="250" FontSize="25" x:Name="CourseStatsWindow" Content="Отчет по курсам" Click="CourseStatsWindow_OnClick"></Button>
+       <Button Grid.Row="2"  VerticalAlignment="Center" Grid.Column="1" Width="310" FontSize="25" x:Name="AttendanceStatsWindow" Content="Отчет по успеваемости" Click="AttendanceStatsWindow_OnClick"></Button>
+       <Button Grid.Row="3"  VerticalAlignment="Center" Grid.Column="1" Width="250" FontSize="25" x:Name="PaymentStatsWindow" Content="Отчет по оплатам" Click="PaymentStatsWindow_OnClick"></Button>
+       <Button Grid.Row="5"   HorizontalAlignment="Left"  Width="85" FontSize="20" x:Name="Exit_Btn" Content="Выйти" Click="Exit_Btn_OnClick"></Button>
+       <Button Grid.Row="5"   HorizontalAlignment="Right" Grid.Column="4" Width="255"  x:Name="SchleduleWindow" Content="Вернуться к расписанию занятий" Click="SchleduleWindow_OnClick"></Button>
+   </Grid>
+</Window>
+

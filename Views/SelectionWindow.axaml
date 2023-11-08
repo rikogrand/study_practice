@@ -1,0 +1,19 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" 
+        x:Class="study_practice.SelectionWindow"
+      Title="Вход"
+        Height="700"
+        Width="600"
+        WindowStartupLocation="CenterScreen">
+   <Grid>
+       <TextBlock HorizontalAlignment="Center">Войти как</TextBlock>
+       <Button Grid.Row="1" HorizontalAlignment="Left" Margin="150"  VerticalAlignment="Center"  Grid.Column="1" x:Name="clientButton" Content="Клиент" Click="ClientButton_OnClick"></Button>
+       <Button Grid.Row="2" HorizontalAlignment="Right" Margin="150"  VerticalAlignment="Center" Grid.Column="2" x:Name="teacherButton" Content="Преподаватель" Click="TeacherButton_OnClick"></Button>
+       <StackPanel HorizontalAlignment="Center" Grid.Row="2" Grid.ColumnSpan="2" Spacing="10" Orientation="Horizontal">
+       </StackPanel>
+   </Grid>
+</Window>
+

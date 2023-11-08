@@ -1,0 +1,59 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:studyPractice="clr-namespace:study_practice"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="study_practice.AddAttendance_Window"
+        x:DataType="studyPractice:Attendance"
+        Title="Добавить клиента в журнал"
+        Height="700"
+        Width="600"
+        WindowStartupLocation="CenterScreen">
+    
+    <Grid>
+       <Grid.ColumnDefinitions>
+           <ColumnDefinition Width="150"></ColumnDefinition>
+           <ColumnDefinition></ColumnDefinition>
+       </Grid.ColumnDefinitions>
+       <Grid.RowDefinitions>
+           <RowDefinition></RowDefinition>
+           <RowDefinition></RowDefinition>
+           <RowDefinition></RowDefinition>
+           <RowDefinition></RowDefinition>
+           <RowDefinition></RowDefinition>
+           <RowDefinition></RowDefinition>
+       </Grid.RowDefinitions>
+       <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">Номер журнала</TextBlock>
+       <TextBox Grid.Column="1"  Name="attendanceID" Height="10" HorizontalAlignment="Left" Width="300" Text="{Binding Attendance_ID}"/>
+       
+       <TextBlock Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">Клиент</TextBlock>
+       <ComboBox Grid.Row="1" Grid.Column="1"  Name="clientComboBox"  Height="10" x:CompileBindings="False" HorizontalAlignment="Left" VerticalAlignment="Center" Width="300">
+           <ComboBox.ItemTemplate>
+               <DataTemplate x:DataType="studyPractice:Client">
+                   <TextBlock Text="{Binding Surname}"></TextBlock>
+               </DataTemplate>
+           </ComboBox.ItemTemplate>
+       </ComboBox>
+       
+       <TextBlock Grid.Row="2"  FontSize="11" VerticalAlignment="Center" HorizontalAlignment="Center">Общее количество занятий за месяц</TextBlock>
+       <TextBox Grid.Row="2" Grid.Column="1"  Name="numberOfClassesPerMonth" Height="10" HorizontalAlignment="Left" Width="300" Text="{Binding Number_Of_Classes_Per_Month}"/>
+       
+       <TextBlock Grid.Row="3" VerticalAlignment="Center"  FontSize="10" HorizontalAlignment="Center">Общее количество посещений ученика</TextBlock>
+       <TextBox Grid.Row="3" Grid.Column="1" Name="numberOfClassesClient"  Height="10" HorizontalAlignment="Left" Width="300" Text="{Binding Number_Of_Classes_Client}"/>
+       
+       <TextBlock Grid.Row="4" VerticalAlignment="Center" FontSize="12" HorizontalAlignment="Center">Количество пропусков</TextBlock>
+       <TextBox Grid.Row="4" Grid.Column="1" Name="numberOfPass" Height="10" HorizontalAlignment="Left" Width="300" Text="{Binding Number_Of_Pass}"/>
+       
+       <TextBlock Grid.Row="5" VerticalAlignment="Center" HorizontalAlignment="Center">Оценки</TextBlock>
+       <TextBox Grid.Row="5" Grid.Column="1" Name="ratings" Height="10" HorizontalAlignment="Left" Width="150" Text="{Binding Ratings}"/>
+       
+       <StackPanel HorizontalAlignment="Center" Grid.Row="10" Grid.ColumnSpan="2" Spacing="10" Orientation="Horizontal">
+           <Button Grid.Row="10" Name="BackButton" Content="Вернуться" Click="BackButton_OnClick" />
+           <Button Grid.Row="10" Grid.Column="1" Name="AddButton" Content="Добавить" Click="AddButton_OnClick" />
+       </StackPanel>
+       
+       
+   </Grid>
+</Window>
+

@@ -1,0 +1,41 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:studyPractice="clr-namespace:study_practice"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="study_practice.AttendanceWindow"
+        Title="Журнал посещений">
+    <Grid  RowDefinitions="*">
+        <DataGrid  x:Name="AttendanceDataGrid"
+                   AutoGenerateColumns="False"
+                   IsReadOnly="True"
+                   GridLinesVisibility="All"
+                   BorderThickness="1"
+                   BorderBrush="Gray"
+                   Height="300"
+                   Width="320"
+                   VerticalAlignment="Top"
+                   x:CompileBindings="False">
+                    
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding Attendance_ID}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Клиент" x:DataType="studyPractice:Client"  Binding="{Binding Client}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Количество занятий за месяц" Binding="{Binding Number_Of_Classes_Per_Month}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Количество посещений клиента" Binding="{Binding Number_Of_Classes_Client}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Количество пропусков" Binding="{Binding Number_Of_Pass}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Оценки" Binding="{Binding Ratings}"></DataGridTextColumn>
+            </DataGrid.Columns>
+            
+        </DataGrid>
+        
+        <Grid Grid.Row=""  Width="200" HorizontalAlignment="Left" RowDefinitions="*, *,*,* " ColumnDefinitions="*,*,*,*,*" >
+            <Button x:Name="Schledule_Window" Grid.Column="" Grid.Row="5" FontSize="12" Width="220" Content="Вернуться к расписанию занятий" Click="Schledule_Window_OnClick" />
+            <Button x:Name="AddAttendance_Window" Grid.Row="" Grid.Column="2" FontSize="16" Width="100" Content="Добавить" Click="AddAttendance_Window_OnClick" />
+            <Button x:Name="EditAttendance_Window" Grid.Row="1" Grid.Column="2" FontSize="16" Width="100" Content="Изменить" Click="EditAttendance_Window_OnClick"/>
+            <Button x:Name="DeleteAttendance_Window" Grid.Row="2" Grid.Column="2" FontSize="16" Width="100" Content="Удалить" Click="DeleteAttendance_Window_OnClick"/>
+            <TextBox Name="search_attendance" Width="200" Height="20"  Grid.Row="2" TextChanged="Search_attendance_OnTextChanged"  HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Column="4" ></TextBox>
+        </Grid>
+        <Button x:Name="Exit" Grid.Row="2" HorizontalAlignment="Right" FontSize="20"   Content="Выйти"  Click="Exit_OnClick"/>
+    </Grid>
+</Window>

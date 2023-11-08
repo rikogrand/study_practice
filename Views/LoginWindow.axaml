@@ -1,0 +1,38 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" 
+        x:Class="study_practice.LoginWindow"
+        Title="Войти как учитель"
+      Height="300"
+        Width="700"
+        WindowStartupLocation="CenterScreen">
+   <Grid Background="Chocolate">
+       <Grid RowDefinitions="*, Auto">
+           <Grid Grid.Column="0"   Grid.Row="0" ColumnDefinitions="*" > 
+               <Grid Grid.Column="0" RowDefinitions="*, *, *, *, *">
+       <Grid.RowDefinitions>
+           <RowDefinition></RowDefinition>
+           <RowDefinition></RowDefinition>
+           <RowDefinition></RowDefinition>
+           <RowDefinition></RowDefinition>
+           <RowDefinition></RowDefinition>
+           <RowDefinition></RowDefinition>
+       </Grid.RowDefinitions>
+       <TextBlock Grid.Row="1"  VerticalAlignment="Center" HorizontalAlignment="Center">Логин</TextBlock>
+       <TextBox  Grid.Row="3"  Name="LoginTextBox" Height="10" VerticalAlignment="Center" HorizontalAlignment="Center" Width="300"/>
+       
+       <TextBlock  Grid.Row="5" VerticalAlignment="Top" HorizontalAlignment="Center">Пароль</TextBlock>
+       <TextBox   Grid.Row="6"  Name="PasswordTextBox" PasswordChar="*" VerticalAlignment="Top" Height="10" HorizontalAlignment="Center" Width="300"/>
+       <TextBlock  Grid.Row="6" VerticalAlignment="Center" Margin="70,0" HorizontalAlignment="Right">Показать пароль</TextBlock>
+       <CheckBox Grid.Row="6" Name="HidePasswordCheckBox" IsCheckedChanged="HidePasswordCheckBox_OnIsCheckedChanged"  HorizontalAlignment="Right" Margin="30,0"/>
+       <StackPanel  HorizontalAlignment="Center" Grid.Row="8"  Spacing="20" Orientation="Horizontal">
+           <Button  Name="BackButton" Content="Вернуться" Click="BackButton_OnClick" />
+           <Button Name="LoginButton" Content="Войти" Click="LoginButton_OnClick" />
+       </StackPanel>
+   </Grid>
+           </Grid>
+       </Grid>
+   </Grid>
+</Window>
